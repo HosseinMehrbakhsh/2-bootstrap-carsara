@@ -411,4 +411,14 @@ body {
     fill: var(--asali-color);
 }
 
+@media (max-width: 767.98px) {
+    .footer_text {
+        font-size: small;
+    }
+
+    .footer_copyright {
+        font-size: 12px;
+    }
+}
+
 /* end footer */
