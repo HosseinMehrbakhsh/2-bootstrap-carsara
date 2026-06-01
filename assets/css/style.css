@@ -9,6 +9,26 @@ body {
     font-family: Vazirmatn;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.scrol_btn {
+    background-color: var(--dark-navy-color);
+    color: white;
+    border: 1px solid white;
+    font-size: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition-duration: 0.3s;
+}
+
+.scrol_btn:hover {
+    color: var(--asali-color);
+    border: 1px solid var(--asali-color);
+}
+
 .text-asali {
     color: var(--asali-color) !important;
 }

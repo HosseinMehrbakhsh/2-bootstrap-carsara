@@ -1490,32 +1490,15 @@
     </footer>
     <!-- end footer -->
 
+    <!-- scroll to top -->
+    <button class="scrol_btn d-none p-1 rounded-2">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
 
 
-    <script>
-        window.addEventListener("load", function () {
-            const items = document.querySelectorAll(".carousel_item_comments");
-            const items_d = document.querySelectorAll(".carousel_item_comments_d");
-            let maxHeight = 0;
 
-            // Find tallest slide
-            items.forEach(item => {
-                item.style.height = "auto"; // reset in case
-                const height = item.offsetHeight;
-                if (height > maxHeight) {
-                    maxHeight = height;
-                }
-            });
 
-            // Apply tallest height to all slides
-            items.forEach(item => {
-                item.style.height = maxHeight + "px";
-            });
-            items_d.forEach(item => {
-                item.style.height = maxHeight + "px";
-            });
-        });
-    </script>
+    <script src="assets/js/app.js"></script>
 
     <!-- <script>
         const items = document.querySelectorAll('.carousel-item');
