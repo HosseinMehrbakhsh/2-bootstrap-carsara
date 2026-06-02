@@ -1,4 +1,10 @@
 let scrollBtn = document.querySelector('.scrol_btn');
+let loaderContainer = document.querySelector('.loader_container');
+
+
+window.addEventListener('load', () => {
+    loaderContainer.classList.add('d-none');
+});
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
@@ -8,21 +14,9 @@ window.addEventListener('scroll', () => {
 });
 
 
-scrollBtn.addEventListener('click',()=>{
-    window.scrollTo(0,0);
-})
-
-
-
-
-
-
-
-
-
-
-
-
+scrollBtn.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+});
 
 
 
